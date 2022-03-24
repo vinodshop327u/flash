@@ -9,6 +9,7 @@ public class Test
 		a.b();  
 		a.c();  
 		a.d();  
+		System.out.println(a.z);
 	}
 
 }
