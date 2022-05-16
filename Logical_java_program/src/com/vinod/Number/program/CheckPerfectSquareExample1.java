@@ -9,7 +9,7 @@ public class CheckPerfectSquareExample1
 	{   
 		//calculating the square root of the given number  
 		double sqrt=Math.sqrt(number);   
-		System.out.println("square number = "+ (sqrt-Math.floor(sqrt)));
+		//System.out.println("square number = "+ (sqrt-Math.floor(sqrt)));
 		//finds the floor value of the square root and comparing it with zero  
 		return ((sqrt - Math.floor(sqrt)) == 0);   
 	}   
