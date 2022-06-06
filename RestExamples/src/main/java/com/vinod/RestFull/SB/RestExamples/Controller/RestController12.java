@@ -1,5 +1,6 @@
 package com.vinod.RestFull.SB.RestExamples.Controller;
 
+import javax.ws.rs.MatrixParam;
 import javax.ws.rs.QueryParam;
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,6 +23,12 @@ public class RestController12
 	//http://localhost:9090/name1?name1=vinod&name2=Dhatri
 	@GetMapping("/name1")
 	public String empName1(@QueryParam ("name1")String name1,@QueryParam ("name2")String name2)
+	{
+		return "hai----------------------------------"+name1+" ---------------------"+name2;
+	}
+	
+	@GetMapping("/name2")
+	public String empName2(@MatrixParam ("name1") String name1,@MatrixParam ("name2") String name2)
 	{
 		return "hai----------------------------------"+name1+" ---------------------"+name2;
 	}
