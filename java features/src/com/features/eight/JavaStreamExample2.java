@@ -4,7 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-
+interface userinterface
+{
+	public String m1(); 
+}
 class Product1
 {
 	int id;  
@@ -33,6 +36,14 @@ public class JavaStreamExample2 {
 	        productsList.add(new Product1(4,"Sony Laptop",28000f));  
 	        productsList.add(new Product1(5,"Apple Laptop",90000f));  
 	       
+	        userinterface ui=()->"hai";
+	        System.out.println(ui.m1());
+	        
+	        userinterface ui1=()->{
+	        	return "hello";	
+	        };
+	        System.out.println(ui1.m1());
+	        
 	       long count= productsList.stream()
 	        		.filter(Product1->Product1.price>=250)
 	        		.count();
