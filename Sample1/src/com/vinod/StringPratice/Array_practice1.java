@@ -22,9 +22,8 @@ public class Array_practice1
 			System.out.println("Array must be 2 numbers");
 		}
 	
+		int[] num_array = {50,23,23};
+		System.out.println(num_array.length >= 2 && num_array[0] ==  num_array[num_array.length-1]);
 	
-	int[] num_array = {50};
-    
-	System.out.println(num_array.length >= 2 && num_array[0] ==  num_array[num_array.length-1]);
 	}
 }
